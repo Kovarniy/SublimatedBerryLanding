@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/fonts.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="shortcut icon" href="images/cherry.ico" type="image/x-icon">
     <!--My  js -->
     <script src="scripts/jquery-3.4.0.min.js" type="text/javascript"></script>
     <script src="scripts/landing.js"></script>
@@ -94,12 +96,12 @@
 <div  id="tipsPage" class="blocks">
     <div class="container">
 
-        <h2 class="d-none d-sm-block">В чем преимущества
+        <h2 class="d-none d-sm-block">В чем преимушества
             <br>
             сущеных ягод?
         </h2>
 
-        <h2 class="d-block d-sm-none slider-title-sm">В чем преимущества
+        <h2 class="d-block d-sm-none slider-title-sm">В чем преимушества
             <br>
             сущеных ягод?
         </h2>
@@ -399,11 +401,11 @@
 
                 <div class="d-none d-sm-flex justify-content-center d-sm-block col-sm-10 col-md-8 col-lg-6 col-xl-5">
 
-                    <form method="POST" id="form1" action="javascript:void(null);" class="formx order-form order-form-xl" onsubmit="sendmessage(id)">
+                    <form method="POST" id="desktop1" action="javascript:void(null);" class="formx order-form order-form-xl" onsubmit="sendmessage(id)">
                         <h2 class="order-title order-title-xl">Оставьте заявку,</h2>
                         <p class="order-p order-p-xl">и мы вам перезвоним</p>
-                        <input class="order-input input-f" name="name" type="input" value="" placeholder="Имя">
-                        <input class="order-input input-s" name="myPhone" type="input" value="" placeholder="Номер телефона">
+                        <input title="Можно использовать Только Русске и Английске буквы" class="order-input input-f" name="name" type="text" pattern="^[a-zA-Z-Яа-яЁё]+$" value="" placeholder="Имя" minlength="2" maxlength="30" required>
+                        <input class="order-input input-s" name="myPhone" type="number" value=""  placeholder="Номер телефона" minlength="6" maxlength="12" required>
                         <input type="submit" class="modal-btn pinkBtn-sm-size pinkBtn" value="ОФОРМИТЬ ЗАКАЗ">
                     </form>
 
@@ -413,12 +415,12 @@
 
                 <div class="d-block d-sm-none col-12 d-flex justify-content-center">
 
-                    <form method="POST" id="form2" action="javascript:void(null);" class="formx order-form order-form-sm" onsubmit="sendmessage(id)">
+                    <form method="POST" id="mobile1" action="javascript:void(null);" class="formx order-form order-form-sm" onsubmit="sendmessage(id)">
                         <h2 class="order-title order-title-d">Оставьте заявку,</h2>
                         <p class="order-p order-p-d">и мы вам перезвоним</p>
-                        <input class="name order-input pinkBtn-d-size input-f" type="input" placeholder="Имя">
-                        <input class="myphone order-input pinkBtn-d-size input-s" type="input" placeholder="Номер телефона">
-                        <button type="button" class="modal-btn pinkBtn-d-size pinkBtn">ОФОРМИТЬ ЗАКАЗ</button>
+                        <input title="Можно использовать Только Русске и Английске буквы" class="order-input pinkBtn-d-size input-f" name="text" pattern="^[a-zA-Z-Яа-яЁё]+$" type="input" placeholder="Имя" minlength="2" maxlength="30" required>
+                        <input class="order-input pinkBtn-d-size input-s" name="myPhone" type="number" placeholder="Номер телефона" minlength="6" maxlength="12" required>
+                        <input type="submit" class="modal-btn pinkBtn-d-size pinkBtn" value="ОФОРМИТЬ ЗАКАЗ">
                     </form>
 
                 </div>
@@ -500,7 +502,9 @@
     <div class="toTop toTop-d"><i class="toTop-i-d material-icons md-36">expand_less</i></div>
 </div>
 
-<!-- Modal -->
+
+
+<!-- Modal ПОДУМАТЬ, НУЖНО ЛИ МОДАЛЬНОЕ ОКНО-->
 <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
     <div class="d-none d-sm-block modal-dialog" role="document">
         <div class="order-form order-form-margin modal-content">

@@ -449,7 +449,6 @@ h2{
 }
 
 .pinkBtn,
-.pinkBtn:active,
 .pinkBtn:focus{
     outline: none;
 }
@@ -481,6 +480,11 @@ h2{
 }
 
 .pinkBtn:hover{
+    background-color: #EB88A7;
+    border: solid #EB88A7;
+}
+.pinkBtn:active{
+    outline: none;
     background-color: #D485C5;
     border: solid #D485C5;
 }
@@ -501,7 +505,6 @@ h2{
 }
 
 .greenBtn,
-.greenBtn:active,
 .greenBtn:focus{
     outline: none;
 }
@@ -510,6 +513,14 @@ h2{
     background-color: #8FD485;
     border: solid #8FD485;
 }
+
+.greenBtn:active{
+    outline: none;
+    background-color: #b7f689;
+    border: solid #b7f689;
+}
+
+
 
 /* блок по дефолту */
 .blocks {
@@ -541,6 +552,9 @@ h2{
 
 .toTop:hover{
     background-color: #A585D4;
+}
+.toTop:active{
+    background-color: #A79BF6;
 }
 
 .toTop-i-xl {
