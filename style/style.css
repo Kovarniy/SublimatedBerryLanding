@@ -1,0 +1,556 @@
+/* Навигация */
+.navigation{
+    line-height: 2.5;
+    background-color: #A0EAAD;
+}
+
+ul{
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* nav links */
+.navigation a {
+    color: #282828;
+}
+.navigation a:hover {
+    text-decoration: none;
+}
+
+/* Меню Навигации */
+.navigationItem{
+    font-family: "Lato Light";
+    list-style-type: none;
+    display:inline-block;
+}
+
+.nav-d{
+    width: 300px;
+    display: block;
+    margin-left: auto;
+    text-align: right;
+}
+
+.navigation-main-xl{
+    padding: 0 9px 0 9px;
+    font-size: 22px;
+}
+
+.navigation-main-lg{
+    padding: 0 6px 0 6px;
+    font-size: 18px;
+}
+
+.navigation-main-md{
+    padding: 0 3px 0 3px;
+    font-size: 14px;
+}
+
+.navigation-main-sm{
+    padding: 0 1.5px 0 1.5px;
+    font-size: 10px;
+}
+
+/* left*/
+.navigationItemLeft{
+    font-family: "Lato Regular";
+    list-style-type: none;
+    float: left;
+    line-height: 3;
+}
+.navigation-L-t-xl{
+    font-size: 18px;
+    padding: 0 48px 0 0;
+}
+
+.navigation-L-t-lg{
+    font-size: 14px;
+    padding: 0 35px 0 0;
+}
+
+.navigation-L-t-md{
+    font-size: 14px;
+    padding: 0 13.5px 0 0;
+}
+
+/* right*/
+.navigationItemRight{
+    /*border: 4px double black;*/
+    font-family: "Lato Regular";
+    list-style-type: none;
+    float: right;
+    line-height: 3;
+}
+.navigation-R-t-xl{
+    font-size: 18px;
+    padding: 0 0px 0 48px;
+ }
+
+.navigation-R-t-lg{
+    font-size: 14px;
+    padding: 0 0px 0 35px;
+}
+
+.navigation-R-t-md{
+    font-size: 14px;
+    padding: 0 0 0 13.5px;
+
+}
+
+/* Недо слайдер*/
+
+/* TODO РАЗОБРАТЬСЯ С ЗДАНИЕМ ПОЛОЖЕНИЕ ЭЛЛЕМЕНТОВ
+TODO padding ?!*/
+
+#slider{
+    text-align: center;
+    background-image: url(../images/slider4.jpg);
+    background-repeat: no-repeat;
+  /*  display: block;*/
+    display: flex;
+
+    background-position: 50% 0%;
+    width: 100%;
+    height: 774px;
+}
+
+@media (max-width: 1200px) {
+    #slider {height: 670px}
+}
+
+@media (max-width: 991px) {
+    #slider {height: 500px}
+}
+
+@media (max-width: 767px) {
+    #slider {height: 400px}
+}
+
+
+.sliderContent{
+    margin: auto;
+   /* border: 4px double #ddedda; */
+}
+
+.slider-title{
+    line-height: 0.8;
+    font-family: "Fantazyor";
+    color: white;
+}
+
+.slider-title-lg{
+    font-size: 90px;
+}
+
+.slider-title-md{
+    font-size: 68px;
+}
+
+.slider-title-sm{
+    font-size: 34px;
+}
+
+.slider-text{
+    line-height: 1;
+    font-family: "Lato Regular";
+    color: white;
+    padding: 0;
+    margin: 0;
+}
+
+.slider-text-lg{
+    font-size: 48px;
+}
+
+.modal-text-d{
+    font-size: 20px;
+}
+
+.text-xl{
+    font-size: 36px;
+}
+
+.text-lg{
+    font-size: 32px;
+}
+
+.text-d{
+    font-size: 26px;
+}
+
+.sliderContent button {
+    padding: 0;
+}
+
+/* Tips aka советы */
+
+.tipsCircle-style {
+    border: 15px double #A0EAAD;
+    border-radius: 100%;
+}
+
+.tipsCircle-xl {
+    width: 350px;
+}
+
+.tipsCircle-lg {
+    width: 300px;
+}
+
+.tipsCircle-sm {
+    width: 400px;
+}
+
+/* discription*/
+#tipsPage p {
+    font-family: "Lato Light";
+}
+
+/* Список товаров */
+#catalogPage{
+    background-color: #DDEDEC;
+    min-height: 1488px;
+    height: auto;
+}
+
+.price-title{
+    margin: 0 0 75px 0;
+}
+
+.lot{
+    background-color: #FFFFFF;
+    border-radius: 7%;
+    margin: 0 0 30px 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.lot-size-xl{
+    width: 350px;
+    height: 420px;
+}
+
+.lot-img-xl{
+    padding: 10px 0 0 0;
+    border-radius: 10%;
+}
+
+.lot-size-lg{
+    /*было
+    width: 300px;*/
+    width: 290px;
+    height: 355px;
+}
+
+.lot-size-sm{
+    width: 270px;
+    height: 325px;
+}
+
+.lot-img-lg{
+    padding: 10px 0 0 0;
+    border-radius: 10%;
+    width: 90%;
+
+}
+
+.center-block{
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.centerText-block{
+    text-align: center;
+}
+
+.orderBtn-padding{
+   margin: 95px 0 145px 0;
+}
+
+/* Советы ака рецепты ака полезные свойство */
+.advice-img{
+    border: 15px double #A0EAAD;
+    border-radius: 100%;
+}
+
+.advice-img-xl{
+    width: 540px;
+}
+
+
+.pText{
+    font-family: "Lato Light";
+   /* font-size: 30px;*/
+    line-height: 1.25;
+}
+
+.advice-header{
+    margin: 0 0 10px 0;
+}
+
+/* order */
+.order{
+    background-image: url(../images/order1gaus.jpg);
+    background-repeat: no-repeat;
+    display: block;
+    background-position: 50% 0%;
+    width: 100%;
+    min-height: 325px;
+    height: 900px;
+}
+
+.order-form{
+     background-color: #E6EFF0;
+     border-radius: 5%;
+}
+
+.order-form-margin{
+    margin: 0 0 200px 0;
+}
+
+.order-form-xl{
+    width: 443px;
+    height: 507px;
+}
+
+.order-form-sm{
+    width: 300px;
+    height: 407px;
+}
+
+.modal-order-form-sm{
+    width: 310px;
+    height: 440px;
+    margin: 0 0 120px 0;
+}
+
+.order-title{
+    padding: 5px 0 0 0;
+    font-family: "Lato Regular";
+    margin: 45px 0 5px 0;
+}
+
+.order-title-xl{
+    font-size: 40px;
+}
+
+.order-title-d{
+    font-size: 30px;
+}
+
+
+.order-p{
+    font-family: "Lato Light";
+}
+
+.order-p-xl{
+    font-size: 24px;
+}
+
+.order-p-d{
+    font-size: 18px;
+}
+
+
+.order-input{
+    background-color: #D3E5E7;
+    border: solid #D3E5E7;
+    border-radius: 15px;
+    font-family: "Lato Light";
+    font-size: 30px;
+    outline:none;
+    width: 290px;
+    height: 75px;
+}
+
+.input-f{
+    margin: 0 0 30px 0;
+}
+
+.input-s{
+    margin: 0 0 45px 0;
+}
+
+/* Футер */
+
+footer{
+    background-color: #A0EAAD;
+    min-heightt: 140px;
+    heightt: auto;
+}
+
+.centerText-block > h2{
+    font-family: "Fantazyor";
+    color: white;
+    line-height: 0.9;
+    margin: 45px 0 30px 0;
+}
+
+.footer-logo-xl{
+    font-size: 36px;
+}
+
+.footer-logo-d{
+    font-size: 32px;
+}
+
+
+.ft-left{
+    text-align: left;
+}
+
+.social{
+    margin: 45px 0 0 0;
+}
+
+.ft-right{
+    text-align: right;
+}
+
+.foot-txt-1{
+    margin: 38px 0 0 0 ;
+    font-family: "Lato Bold";
+}
+
+.foot-txt-2{
+    color: #EAA0B8;
+    margin: 0;
+    font-family: "Lato Black";
+}
+.foot-txt-3{
+    font-family: "Lato Light";
+    margin: 0 0 30px 0;
+}
+
+
+.ft-right > p {
+    tab-size: 18;
+}
+
+/* Эллементы */
+
+/* h2 контейнер*/
+h2{
+    font-family: "Lato Light";
+    font-size: 48px;
+    margin: 0 0 110px 0;
+}
+
+/* Розовая кнопка */
+.pinkBtn{
+    color: white;
+    font-family: "Lato Bold";
+    font-size: 30px;
+    background-color: #EAA0B8;
+    border: solid #EAA0B8;
+    border-radius: 15px;
+}
+
+.pinkBtn,
+.pinkBtn:active,
+.pinkBtn:focus{
+    outline: none;
+}
+
+    /* размер обычный */
+.pinkBtn-std-size{
+    width: 350px;
+    height: 88px;
+    font-size: 30px;
+}
+
+/* розовая кнопка размер "для формы заказа"  */
+.pinkBtn-sm-size{
+    width: 290px;
+    height: 75px;
+    font-size: 24px;
+}
+
+.pinkBtn-d-size{
+    width: 210px;
+    height: 56px;
+    font-size: 18px;
+}
+
+.modal-input-size{
+    width: 231px;
+    height: 62px;
+    font-size: 20px;
+}
+
+.pinkBtn:hover{
+    background-color: #D485C5;
+    border: solid #D485C5;
+}
+
+/* зеленая кнопка*/
+.greenBtn{
+    outline:none;
+    color: white;
+    font-family: "Lato Bold";
+    font-size: 24px;
+    background-color: #A0EAAD;
+    border: solid #A0EAAD;
+    border-radius: 5px;
+    width: 165px;
+    height: 40px;
+    /*TODO Отступ, его можно передать в отедльный класс, который будет задавать только отступ кнопки*/
+    margin: 24px 0 24px 0;
+}
+
+.greenBtn,
+.greenBtn:active,
+.greenBtn:focus{
+    outline: none;
+}
+
+.greenBtn:hover{
+    background-color: #8FD485;
+    border: solid #8FD485;
+}
+
+/* блок по дефолту */
+.blocks {
+    padding: 130px 0 130px 0;
+    text-align: center;
+}
+
+/* Проскрутка вверх*/
+.toTop{
+    background-color: #D29FEA;
+    position:fixed;
+    bottom: 150px;
+    right: 5%;
+    cursor:pointer;
+    display: none;
+    text-align: center;
+    border-radius: 100%;
+}
+
+.toTop-xl{
+    width: 100px;
+    height: 100px;
+}
+
+.toTop-d{
+    width: 80px;
+    height: 80px;
+}
+
+.toTop:hover{
+    background-color: #A585D4;
+}
+
+.toTop-i-xl {
+    padding: 25px;
+}
+.toTop-i-d {
+    padding: 20px;
+}
+
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
