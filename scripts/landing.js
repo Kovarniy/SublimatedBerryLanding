@@ -23,11 +23,19 @@ function sendmessage(id) {
         url: 'https://kovarniy.github.io/res.php', // путь к php-обработчику
         type: 'POST', // метод передачи данных
         data: msg,
-        success: function (data) {
-            alert('Спасибо мы обязательно свяжемся с вами');
+        success: function () {
+            $('.call-success').fadeIn();
+        },
+        error: function () {
+            $('#call-danger').fadeIn();
         }
     })
 }
+
+function hide(id) {
+    $('#call-' + id).fadeOut();
+}
+
 
 function myPrice(jsonObj) {
     $(jsonObj.post).each(function (index) {

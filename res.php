@@ -1,7 +1,5 @@
 <?php
-        // Получаем содержимое файла config.json
-        // Допустим, там закодированный массив вида
-        // array('apple', 'orange')
+        // Получаем содержимое файла order.json
         $json = file_get_contents('order.json');
         // Декодируем
         $json = json_decode($json, true);
