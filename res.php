@@ -4,12 +4,15 @@
         // Декодируем
         $json = json_decode($json, true);
         // Добавляем элемент
+
+        //$name = mb_convert_encoding($_POST["name"], 'cp1251');
+
         $json[] = (object) array('name' => $_POST["name"],
                                  'phone' => $_POST["myPhone"]
          );
 
         // Превращаем опять в JSON
-        $json = json_encode($json);
+        $json = json_encode($json, JSON_UNESCAPED_UNICODE);
 
         //включаем блокировку
         if (flock($handler, LOCK_EX)) {
