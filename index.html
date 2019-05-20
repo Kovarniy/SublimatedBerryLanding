@@ -395,39 +395,38 @@
         </div>
     </div>
 </div>
-
 <div id="orderPage" class="order blocks">
 
     <div class="container">
         <div class="row">
 
-                <div class="d-none d-sm-block col-sm-1 col-md-2 col-lg-6 col-xl-7"></div>
+            <div class="d-none d-sm-block col-sm-1 col-md-2 col-lg-6 col-xl-7"></div>
 
-                <div class="d-none d-sm-flex justify-content-center d-sm-block col-sm-10 col-md-8 col-lg-6 col-xl-5">
 
-                    <form method="POST" id="desktop1" action="javascript:void(null);" class="formx order-form order-form-xl" onsubmit="sendmessage(id)">
-                        <h2 class="order-title order-title-xl">Оставьте заявку,</h2>
-                        <p class="order-p order-p-xl">и мы вам перезвоним</p>
-                        <input title="Можно использовать Только Русске и Английске буквы" class="order-input input-f" name="name" type="text" pattern="^[A-Za-zА-Яа-яЁё]+$" value="" placeholder="Имя" minlength="2" maxlength="30" required>
-                        <input title="Можно использовать только цифры" class="order-input input-s" name="myPhone" type="text" value="" pattern="[0-9]" placeholder="Номер телефона" minlength="6" maxlength="12" required>
-                        <input type="submit" class="modal-btn pinkBtn-sm-size pinkBtn" value="ОФОРМИТЬ ЗАКАЗ">
-                    </form>
+            <form method="POST" id="desktop1" action="javascript:void(null);" class="formx order-form order-form-xl" onsubmit="sendmessage(id)">
+                <h2 class="order-title order-title-xl">Оставьте заявку,</h2>
+                <p class="order-p order-p-xl">и мы вам перезвоним</p>
+                <input title="Можно использовать Только Русске и Английске буквы" class="order-input input-f" name="name" type="text" pattern="^[A-Za-zА-Яа-яЁё]+$" value="" placeholder="Имя" minlength="2" maxlength="30" required>
+                <input title="Можно использовать только цифры" class="order-input input-s" name="myPhone" type="text" value="" pattern="[0-9]{5,10}{6,11}" placeholder="Номер телефона" minlength="6" maxlength="11" required>
+                <input type="submit" class="modal-btn pinkBtn-sm-size pinkBtn" value="ОФОРМИТЬ ЗАКАЗ">
+            </form>                <div class="d-none d-sm-flex justify-content-center d-sm-block col-sm-10 col-md-8 col-lg-6 col-xl-5">
 
-                </div>
 
-                <div class="d-none d-sm-block col-sm-1 col-md-2 d-lg-none d-xl-none">  </div>
+        </div>
 
-                <div class="d-block d-sm-none col-12 d-flex justify-content-center">
+            <div class="d-none d-sm-block col-sm-1 col-md-2 d-lg-none d-xl-none">  </div>
 
-                    <form method="POST" id="mobile1" action="javascript:void(null);" class="formx order-form order-form-sm" onsubmit="sendmessage(id)">
-                        <h2 class="order-title order-title-d">Оставьте заявку,</h2>
-                        <p class="order-p order-p-d">и мы вам перезвоним</p>
-                        <input title="Можно использовать Только Русске и Английске буквы" class="order-input pinkBtn-d-size input-f" name="text" pattern="^[A-Za-zА-Яа-яЁё]+$" type="text" placeholder="Имя" minlength="2" maxlength="30" required>
-                        <input title="Можно использовать только цифры" class="order-input pinkBtn-d-size input-s" name="myPhone" type="text" value="" pattern="[0-9]" placeholder="Номер телефона" minlength="6" maxlength="12" required>
-                        <input type="submit" class="modal-btn pinkBtn-d-size pinkBtn" value="ОФОРМИТЬ ЗАКАЗ">
-                    </form>
+            <div class="d-block d-sm-none col-12 d-flex justify-content-center">
 
-                </div>
+                <form method="POST" id="mobile1" action="javascript:void(null);" class="formx order-form order-form-sm" onsubmit="sendmessage(id)">
+                    <h2 class="order-title order-title-d">Оставьте заявку,</h2>
+                    <p class="order-p order-p-d">и мы вам перезвоним</p>
+                    <input title="Можно использовать Только Русске и Английске буквы" class="order-input pinkBtn-d-size input-f" name="text" pattern="^[A-Za-zА-Яа-яЁё]+$" type="text" placeholder="Имя" minlength="2" maxlength="30" required>
+                    <input title="Можно использовать только цифры" class="order-input pinkBtn-d-size input-s" name="myPhone" type="text" value="" pattern="[0-9]" placeholder="Номер телефона" minlength="6" maxlength="11" required>
+                    <input type="submit" class="modal-btn pinkBtn-d-size pinkBtn" value="ОФОРМИТЬ ЗАКАЗ">
+                </form>
+
+            </div>
 
         </div>
 
